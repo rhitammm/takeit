@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main()
+{
+	int n;
+	printf("Enter value for n");
+	scanf("%d",&n);
+	if(n%5==0)
+	{
+		if(n%8==0)
+		printf("yes divisble by both..\n");
+		
+		else
+		printf("Only divisible by 5\n");
+	}
+	else if(n%8==0)
+	printf("Only divisible by 8\n");
+	else
+	printf("not divisible\n");
+	return 0;
+}
