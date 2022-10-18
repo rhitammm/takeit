@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main()
+{
+	int n;
+	float sum=0;
+	printf("Enter the number of days :\n");
+	scanf("%d",&n);
+	if(n<=5)
+	{
+		sum=n*0.5;
+	}
+	else if(n>=6 && n<=10)
+	{
+		sum=(0.5*5)+(n-5);
+	}
+	else if(n>=11 && n<30)
+	{
+		sum==(0.5*5)+(5*1)+((n-10)*5);
+	}
+	else
+	{
+		printf("Your membership stands cancelled and your fine would be : ");
+		sum=(0.5*5)+(5*1)+(20*5);
+	}
+	printf("%f",sum);
+	return 0;
+}
