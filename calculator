@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main()
+{
+	printf("Enter yout frist number: \n");
+	int a,b,ans;
+	char ch;
+	scanf("%c",&ch);
+	scanf("%d %d",&a,&b);
+	switch(ch)
+		{
+			case '+':
+				ans=a+b;
+				break;
+			case '-':
+				ans=a-b;
+				break;
+			case '/':
+				ans=a/b;
+				break;
+			case '*':
+				ans=a*b;
+				break;
+			case '%':
+				ans=a%b;
+				break;
+			default:
+				printf("wrong input\n");
+		}
+	printf("%d \n",&ans);
+	return 0;
+}
