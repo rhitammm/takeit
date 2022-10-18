@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main()
+{
+float b ; 	
+int a,c;
+	printf("Enter hardness:\n");
+	scanf("%d",&a);
+	printf("Enter carbon content:\n");
+	scanf("%f",&b);
+	printf("Enter tensile strength:\n");
+	scanf("%d",&c);
+	
+	if(a>50 && b<0.7 && c>5600)
+	{
+	printf("Grade 10");	
+	}
+	
+	else if (a>50 && b<0.7)
+	{
+	printf("Grade 9");	
+	}
+	else if( b<0.7 && c>5600)
+	{
+	printf("Grade 8");	
+	}
+	
+	else if(a>50 && c>5600)
+	{
+	printf("Grade 7");	
+	}
+	
+	else if(a>50 || b<0.7 || c>5600)
+	{
+	printf("Grade 6");}
+	else if(a<50 && b>0.7 && c<5600)
+	{
+	printf("Grade 5");
+	}
+}
